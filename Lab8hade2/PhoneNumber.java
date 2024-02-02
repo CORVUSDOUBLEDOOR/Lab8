@@ -23,6 +23,7 @@ public class PhoneNumber {
     public void setTel(String tel) {
         this.Tel = tel;
     }
-
+    public String toString(){
+        return "Name = '" + name + "' Phone = '" + Tel + "'";
+    }
 }
-
