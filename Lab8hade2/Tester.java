@@ -13,7 +13,7 @@ public class Tester {
             Type = kb.next();
             if(Type.equalsIgnoreCase("add")){
                 phoneNumbers.add(new PhoneNumber(kb.next(),kb.next()));
-                System.out.println(phoneNumbers);
+                System.out.println(phoneNumbers.toString());
             }else if(Type.equalsIgnoreCase("search")){
                 name =kb.next();
                 int findSuccess = -1;
@@ -40,8 +40,10 @@ public class Tester {
                     String YorN = kb.next();
                     if (YorN.equalsIgnoreCase("Y")) {
                         phoneNumbers.remove(findToDelete);
+                        System.out.println(phoneNumbers.toString());
                     } else {
                         System.out.println("Delete cancel");
+                        System.out.println(phoneNumbers.toString());
                     }
                 } else {
                     System.out.println(name + " not found in our phonebook");
